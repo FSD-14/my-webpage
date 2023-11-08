@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png">
+  <link rel="manifest" href=".favicon/site.webmanifest">
+  <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="./images/favicon.ico">
+  <meta name="apple-mobile-web-app-title" content="Антон Овчинников">
+  <meta name="application-name" content="Антон Овчинников">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="./images/mstile-144x144.png">
+  <meta name="msapplication-config" content="./images/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+  <title>АНТОН ОВЧИННИКОВ</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="mobile">
+      <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#about">Обо мне</a></li>
+        <li><a href="#projects">Проекты</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+        <li><a href="./index.html">En</a></li>
+      </ul>
+    </nav>
+    <nav class="tablet">
+      <ul>
+        <li class="tablet-item"><a class="tablet-link" href="#"><img class="tablet-icon" src="./images/home.svg" alt="Главная иконка" loading="lazy" width="576" height="512">Главная</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="#about"><img class="tablet-icon" src="./images/about.svg" alt="Обо мне иконка" loading="lazy" width="448" height="512">Обо мне</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="#projects"><img class="tablet-icon" src="./images/projects.svg" alt="Проекты иконка" loading="lazy" width="576" height="448">Проекты</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="#contacts"><img class="tablet-icon" src="./images/contacts.svg" alt="Контакты иконка" loading="lazy" width="512" height="512">Контакты</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="./index.html"><img class="tablet-icon" src="./images/languages.svg" alt="Языки иконка" loading="lazy" width="512" height="512">En</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <main>
+      <section class="name">
+        <h1>Антон Овчинников</h1>
+        <p>Начинающий Full Stack Разработчик</p>
+        <picture>
+          <source srcset="./images/my-photo-laptop.jpeg" media="(min-width: 1025px)" type="image/jpeg" width="2661" height="3551">
+          <source srcset="./images/my-photo-tablet-landscape.jpeg" media="(min-width: 769px)" type="image/jpeg" width="2048" height="2733">
+          <source srcset="./images/my-photo-tablet.jpeg" media="(min-width: 481px)" type="image/jpeg" width="1536" height="2050"><img src="./images/my-photo-mobile.jpeg" alt="Моё фото" loading="lazy" width="960" height="1281">
+        </picture>
+      </section>
+      <section class="about" id="about">
+        <h2>Обо мне</h2>
+        <hr>
+        <p>Я начинающий разработчик. Я учусь самостоятельно, постоянно практикуюсь и совершенствую полученные навыки. Ответственно и тщательно решаю поставленные задачи.</p>
+        <h3>Навыки</h3>
+        <ul class="skills m-15">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Flex</li>
+          <li>Семантическая вёрстка</li>
+          <li>Валидная вёрстка</li>
+          <li>Адаптивная вёрстка</li>
+          <li>Visual Studio Code</li>
+          <li>Figma</li>
+          <li>Pug</li>
+          <li>SASS</li>
+          <li>Кроссбраузерная вёрстка</li>
+          <li>Сначала мобильные</li>
+        </ul>
+        <h3>Образование</h3>
+        <ul class="education m-15">
+          <li class="education-item"><svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.-->
+              <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+            </svg>
+            <p>Белорецкий металлургический колледж | Экономика и бухгалтерский учет (по отраслям)</p>
+          </li>
+          <li class="education-item hover"><svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.-->
+              <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+            </svg><a href="https://roadmap.sh/full-stack" target="_blank">roadmap.sh | Full Stack Разработчик (в процессе)</a></li>
+          <li class="education-item hover"><a href="https://roadmap.sh" target="_blank"><img class="roadmap" src="https://api.roadmap.sh/v1-badge/wide/64d8fc13aa497d7fa5300898?variant=dark" alt="roadmap.sh" loading="lazy"></a></li>
+          <li class="education-item hover"><svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.-->
+              <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
+            </svg><a href="https://www.freecodecamp.org/certification/fccd8fe3e73-116f-49a1-8637-4ad334a1e91c/responsive-web-design" target="_blank">freeCodeCamp | Адаптивный веб-дизайн</a></li>
+          <li class="education-item">
+            <picture class="item-certificate">
+              <source srcset="./images/certificate-laptop.png" media="(min-width: 1025px)" type="image/png" width="2448" height="1644">
+              <source srcset="./images/certificate-tablet-landscape.png" media="(min-width: 769px)" type="image/png" width="2047" height="1375">
+              <source srcset="./images/certificate-tablet.png" media="(min-width: 481px)" type="image/png" width="1536" height="1032"><img src="./images/certificate-mobile.png" alt="Мой сертификат freeCodeCamp | Адаптивный веб-дизайн" loading="lazy" width="960" height="645">
+            </picture>
+          </li>
+        </ul>
+        <h3>Языки</h3>
+        <ul class="skills m-15">
+          <li>Русский - Родной</li>
+          <li>Английский - A1</li>
+        </ul>
+      </section>
+    </main>
+    <section class="projects" id="projects">
+      <h2>Проекты</h2>
+      <hr>
+      <ul class="projects-list">
+        <li class="projects-item"><a class="projects-title" href="https://fsd-14.github.io/writings.dev/">Writings.dev</a><img class="projects-img-top" src="./images/writings-dev.svg" alt="Проект 'Writings.dev'">
+          <div class="projects-img-bottom"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" loading="lazy" alt="HTML5 иконка"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" loading="lazy" alt="CSS3 иконка"></div>
+        </li>
+      </ul>
+    </section>
+    <section class="contacts" id="contacts">
+      <h2>Контакты</h2>
+      <hr>
+      <ul>
+        <li class="contacts-item"><a href="mailto:fsd014@gmail.com"><img class="social-icon" src="./images/email.svg" alt="Email иконка" loading="lazy" width="512" height="384">Email</a></li>
+        <li class="contacts-item"><a href="https://t.me/fsd014" target="_blank"><img class="social-icon" src="./images/telegram.svg" alt="Telegram иконка" loading="lazy" width="496" height="496">Telegram</a></li>
+        <li class="contacts-item"><a href="https://github.com/FSD-14" target="_blank"><img class="social-icon" src="./images/github.svg" alt="GitHub иконка" loading="lazy" width="496" height="484">GitHub</a></li>
+        <li class="contacts-item"><a href="https://vk.com/html_css_developer" target="_blank"><img class="social-icon" src="./images/vk.svg" alt="ВК иконка" loading="lazy" width="448" height="448">ВК</a></li>
+      </ul>
+    </section>
+  </div>
+</body>
+
+</html>
