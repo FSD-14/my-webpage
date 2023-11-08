@@ -1,0 +1,478 @@
+@font-face {
+  font-display: swap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/montserrat-v26-cyrillic_cyrillic-ext_latin-ext-regular.woff2") format("woff2")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box
+}
+
+a {
+  text-decoration: none
+}
+
+ul {
+  list-style-type: none
+}
+
+img {
+  max-width: 100%;
+  height: auto
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth
+}
+
+body {
+  background-color: #000;
+  font: normal 400 1.5rem/1.5 Montserrat;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  flex-direction: column
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  font: normal 400 1.2rem/1.5 Montserrat;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: .6;
+  background-color: #000;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s
+}
+
+header:hover,
+header:focus-within {
+  opacity: 1
+}
+
+header ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+header li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  flex: 1;
+  white-space: nowrap;
+}
+
+header a {
+  color: #fff;
+  padding: .8rem 1.6rem;
+  display: block;
+  outline: none
+}
+
+header a:hover,
+header a:focus {
+  color: #000;
+  background-color: #ccc
+}
+
+.tablet {
+  display: none
+}
+
+main {
+  padding: 1.2rem 2.4rem 0
+}
+
+.name {
+  color: #fff;
+  text-align: center;
+  padding: 3.2rem 0 0
+}
+
+.name h1 {
+  font: normal 400 4.1rem/1.5 Montserrat;
+  margin: 1rem 0
+}
+
+.name p {
+  margin: 1.5rem 0
+}
+
+.about {
+  padding: 4.7rem 0 0
+}
+
+.about h2 {
+  color: #f1f1f1;
+  margin: 1rem 0;
+  font: normal 400 3rem/1.5 Montserrat
+}
+
+.about p {
+  color: #757575;
+  text-align: justify;
+  margin: 1.5rem 0
+}
+
+hr {
+  margin: 2rem 0;
+  max-width: 20rem;
+  border: none;
+  border-top: .1rem solid #eee;
+  opacity: .6
+}
+
+h3 {
+  color: #f1f1f1;
+  font: normal 400 2.4rem/1.5 Montserrat;
+  margin: 1.5rem 0
+}
+
+.skills {
+  color: #757575;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 1rem
+}
+
+.skills li {
+  border: .1rem solid #757575;
+  padding: .5rem 1rem;
+  border-radius: 2rem
+}
+
+.m-15 {
+  margin: 1.5rem 0 0
+}
+
+.education-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -moz-box-align: start;
+  align-items: flex-start;
+  margin-bottom: 1.5rem
+}
+
+.education-item .item-arrow {
+  width: 1.5rem;
+  margin-right: 1rem;
+  fill: #757575;
+  -webkit-flex-shrink: 0;
+  flex-shrink: 0
+}
+
+.education-item p {
+  margin: 0
+}
+
+.education-item a {
+  color: #757575;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s
+}
+
+.education-item a:focus {
+  outline: .1rem solid #fff;
+  color: #fff;
+  border-radius: .5rem
+}
+
+.education-item a:focus .roadmap {
+  opacity: 1
+}
+
+.education-item .roadmap {
+  padding-left: 2rem;
+  opacity: .6;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s
+}
+
+.education-item .item-certificate {
+  padding-left: 2rem;
+  max-width: 50rem
+}
+
+.projects {
+  padding: 4.7rem 2.4rem 0
+}
+
+.projects h2 {
+  color: #f1f1f1;
+  margin: 1rem 0;
+  font: normal 400 3rem/1.5 Montserrat
+}
+
+.projects .projects-item {
+  border: .1rem solid #757575;
+  border-radius: .5rem;
+  padding: 1rem;
+  text-align: center;
+  opacity: .6;
+  max-width: 50rem;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s
+}
+
+.projects .projects-item:focus-within {
+  outline: .1rem solid #fff;
+  opacity: 1
+}
+
+.projects .projects-item:focus-within .projects-title {
+  color: #fff
+}
+
+.projects .projects-title {
+  font: normal 400 2.3rem/1.5 Montserrat;
+  color: #757575;
+  display: block;
+  margin-bottom: 1rem;
+  outline: none;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  transition: all .3s
+}
+
+.projects .projects-img-top {
+  margin-bottom: 1rem
+}
+
+.projects .projects-img-bottom {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  justify-content: center
+}
+
+.projects .projects-img-bottom img {
+  max-width: 5rem;
+  height: auto
+}
+
+.contacts {
+  padding: 4.7rem 2.4rem
+}
+
+.contacts h2 {
+  color: #f1f1f1;
+  margin: 1rem 0;
+  font: normal 400 3rem/1.5 Montserrat
+}
+
+.contacts ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  gap: 1rem;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap
+}
+
+.contacts .contacts-item {
+  margin-right: 1.5rem
+}
+
+.contacts a {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  align-items: center;
+  color: #757575
+}
+
+.contacts a:focus {
+  outline: .1rem solid #fff;
+  color: #fff;
+  border-radius: .5rem
+}
+
+.contacts .social-icon {
+  width: 3.6rem;
+  margin-right: 1rem
+}
+
+@media screen and (min-width: 601px) {
+  body {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    flex-direction: row
+  }
+
+  header {
+    max-width: 12rem;
+    height: 100%
+  }
+
+  header:hover,
+  header:focus-within {
+    background-color: #757575
+  }
+
+  .mobile {
+    display: none
+  }
+
+  .tablet {
+    display: block
+  }
+
+  .tablet-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-box-orient: vertical;
+    -moz-box-direction: normal;
+    flex-direction: column;
+    padding: 2.4rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -moz-box-align: center;
+    align-items: center
+  }
+
+  .tablet-link:hover,
+  .tablet-link:focus {
+    background-color: #000;
+    color: #fff
+  }
+
+  .tablet-icon {
+    width: 3.6rem;
+    margin-bottom: 1.2rem
+  }
+
+  .container {
+    margin-left: 12rem
+  }
+
+  .name h1 {
+    font: normal 400 6.4rem/1.5 Montserrat
+  }
+
+  .skills {
+    white-space: nowrap
+  }
+
+  .skills li {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 1;
+    -moz-box-flex: 0;
+    flex: 0 1
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  html {
+    font-size: 65%
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .hover .item-arrow {
+    -webkit-transition: .3s ease-out;
+    -moz-transition: .3s ease-out;
+    transition: .3s ease-out
+  }
+
+  .hover a:hover {
+    color: #fff
+  }
+
+  .hover:hover .item-arrow {
+    -webkit-transform: translate(0.5rem, 0);
+    -moz-transform: translate(0.5rem, 0);
+    -ms-transform: translate(0.5rem, 0);
+    transform: translate(0.5rem, 0);
+    fill: #fff
+  }
+
+  .roadmap:hover,
+  .projects-item:hover {
+    opacity: 1;
+  }
+
+  .projects-item:hover .projects-title {
+    color: #fff
+  }
+
+  .contacts a {
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    transition: all .3s
+  }
+
+  .contacts a:hover {
+    color: #fff
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  html {
+    font-size: 110%
+  }
+}
