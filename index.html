@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta name="description" content="My Webpage">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png">
@@ -17,6 +18,7 @@
   <meta name="msapplication-config" content="./images/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <title>ANTON OVCHINNIKOV</title>
+  <link rel="preload" href="./style.css" as="style">
   <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -33,11 +35,22 @@
     </nav>
     <nav class="tablet">
       <ul>
-        <li class="tablet-item"><a class="tablet-link" href="#"><img class="tablet-icon" src="./images/home.svg" alt="Home icon" loading="lazy" width="576" height="512">Home</a></li>
-        <li class="tablet-item"><a class="tablet-link" href="#about"><img class="tablet-icon" src="./images/about.svg" alt="About icon" loading="lazy" width="448" height="512">About</a></li>
-        <li class="tablet-item"><a class="tablet-link" href="#projects"><img class="tablet-icon" src="./images/projects.svg" alt="Projects icon" loading="lazy" width="576" height="448">Projects</a></li>
-        <li class="tablet-item"><a class="tablet-link" href="#contacts"><img class="tablet-icon" src="./images/contacts.svg" alt="Contacts icon" loading="lazy" width="512" height="512">Contacts</a></li>
-        <li class="tablet-item"><a class="tablet-link" href="./index-ru.html"><img class="tablet-icon" src="./images/languages.svg" alt="Languages icon" loading="lazy" width="512" height="512">Ru</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="#">
+            <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="tablet-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m575.8,255.5c0,18 -15,32.1 -32,32.1l-32,0l0.7,160.2c0.2,35.5 -28.5,64.3 -64,64.3l-320.4,0c-35.3,0 -64,-28.7 -64,-64l0,-160.5l-32.1,0c-18,0 -32,-14 -32,-32.1c0,-9 3,-17 10,-24l256.4,-223.5c7,-7 15,-8 22,-8s15,2 21,7l255.4,224.5c8,7 12,15 11,24zm-223.8,-31.5a64,64 0 1 0 -128,0a64,64 0 1 0 128,0zm-96,96c-44.2,0 -80,35.8 -80,80c0,8.8 7.2,16 16,16l192,0c8.8,0 16,-7.2 16,-16c0,-44.2 -35.8,-80 -80,-80l-64,0z"></path>
+            </svg>Home</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="#about"><svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="tablet-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m224,256a128,128 0 1 0 0,-256a128,128 0 1 0 0,256zm-45.7,48c-98.5,0 -178.3,79.8 -178.3,178.3c0,16.4 13.3,29.7 29.7,29.7l388.6,0c16.4,0 29.7,-13.3 29.7,-29.7c0,-98.5 -79.8,-178.3 -178.3,-178.3l-91.4,0z"></path>
+            </svg>About</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="#projects"><svg viewBox="0 0 576 448" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="tablet-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m0,48c0,-26.5 21.5,-48 48,-48l96,0c26.5,0 48,21.5 48,48l0,16l192,0l0,-16c0,-26.5 21.5,-48 48,-48l96,0c26.5,0 48,21.5 48,48l0,96c0,26.5 -21.5,48 -48,48l-96,0c-26.5,0 -48,-21.5 -48,-48l0,-16l-192,0l0,16c0,1.7 -0.1,3.4 -0.3,5l80.3,107l96,0c26.5,0 48,21.5 48,48l0,96c0,26.5 -21.5,48 -48,48l-96,0c-26.5,0 -48,-21.5 -48,-48l0,-96c0,-1.7 0.1,-3.4 0.3,-5l-80.3,-107l-96,0c-26.5,0 -48,-21.5 -48,-48l0,-96z"></path>
+            </svg>Projects</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="#contacts"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="tablet-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m164.9,24.6c-7.7,-18.6 -28,-28.5 -47.4,-23.2l-88,24c-17.4,4.8 -29.5,20.6 -29.5,38.6c0,247.4 200.6,448 448,448c18,0 33.8,-12.1 38.6,-29.5l24,-88c5.3,-19.4 -4.6,-39.7 -23.2,-47.4l-96,-40c-16.3,-6.8 -35.2,-2.1 -46.3,11.6l-40.4,49.3c-70.4,-33.3 -127.4,-90.3 -160.7,-160.7l49.3,-40.3c13.7,-11.2 18.4,-30 11.6,-46.3l-40,-96l0,-0.1z"></path>
+            </svg>Contacts</a></li>
+        <li class="tablet-item"><a class="tablet-link" href="./index-ru.html"><svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="tablet-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m352,256c0,22.2 -1.2,43.6 -3.3,64l-185.4,0c-2.2,-20.4 -3.3,-41.8 -3.3,-64s1.2,-43.6 3.3,-64l185.4,0c2.2,20.4 3.3,41.8 3.3,64zm28.8,-64l123.1,0c5.3,20.5 8.1,41.9 8.1,64s-2.8,43.5 -8.1,64l-123.1,0c2.1,-20.6 3.2,-42 3.2,-64s-1.1,-43.4 -3.2,-64zm112.6,-32l-116.7,0c-10,-63.9 -29.8,-117.4 -55.3,-151.6c78.3,20.7 142,77.5 171.9,151.6l0.1,0zm-149.1,0l-176.6,0c6.1,-36.4 15.5,-68.6 27,-94.7c10.5,-23.6 22.2,-40.7 33.5,-51.5c11.2,-10.6 20.5,-13.8 27.8,-13.8s16.6,3.2 27.8,13.8c11.3,10.8 23,27.9 33.5,51.5c11.6,26 20.9,58.2 27,94.7zm-209,0l-116.7,0c30,-74.1 93.6,-130.9 172,-151.6c-25.5,34.2 -45.3,87.7 -55.3,151.6zm-127.2,32l123.1,0c-2.1,20.6 -3.2,42 -3.2,64s1.1,43.4 3.2,64l-123.1,0c-5.3,-20.5 -8.1,-41.9 -8.1,-64s2.8,-43.5 8.1,-64zm186.6,254.6c-11.6,-26 -20.9,-58.2 -27,-94.6l176.6,0c-6.1,36.4 -15.5,68.6 -27,94.6c-10.5,23.6 -22.2,40.7 -33.5,51.5c-11.2,10.7 -20.5,13.9 -27.8,13.9s-16.6,-3.2 -27.8,-13.8c-11.3,-10.8 -23,-27.9 -33.5,-51.5l0,-0.1zm-59.4,-94.6c10,63.9 29.8,117.4 55.3,151.6c-78.4,-20.7 -142,-77.5 -172,-151.6l116.7,0zm358.1,0c-30,74.1 -93.6,130.9 -171.9,151.6c25.5,-34.2 45.2,-87.7 55.3,-151.6l116.6,0z"></path>
+            </svg>Ru</a></li>
       </ul>
     </nav>
   </header>
@@ -47,9 +60,9 @@
         <h1>Anton Ovchinnikov</h1>
         <p>Beginner Full Stack Developer</p>
         <picture>
-          <source srcset="./images/my-photo-laptop.jpeg" media="(min-width: 1025px)" type="image/jpeg" width="2661" height="3551">
-          <source srcset="./images/my-photo-tablet-landscape.jpeg" media="(min-width: 769px)" type="image/jpeg" width="2048" height="2733">
-          <source srcset="./images/my-photo-tablet.jpeg" media="(min-width: 481px)" type="image/jpeg" width="1536" height="2050"><img src="./images/my-photo-mobile.jpeg" alt="My photo" loading="lazy" width="960" height="1281">
+          <source srcset="./images/my-photo-laptop.webp" media="(min-width: 1025px)" type="image/webp" width="1600" height="2135">
+          <source srcset="./images/my-photo-tablet-landscape.webp" media="(min-width: 769px)" type="image/webp" width="1024" height="1366">
+          <source srcset="./images/my-photo-tablet.webp" media="(min-width: 481px)" type="image/webp" width="768" height="1025"><img src="./images/my-photo-mobile.webp" alt="My photo" width="480" height="641">
         </picture>
       </section>
       <section class="about" id="about">
@@ -66,7 +79,6 @@
           <li>Adaptive layout</li>
           <li>Visual Studio Code</li>
           <li>Figma</li>
-          <li>Pug</li>
           <li>SASS</li>
           <li>Cross-browser layout</li>
           <li>Mobile first</li>
@@ -81,15 +93,15 @@
           <li class="education-item hover"><svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.-->
               <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
             </svg><a href="https://roadmap.sh/full-stack" target="_blank">roadmap.sh | Full Stack Developer (in progress)</a></li>
-          <li class="education-item hover"><a href="https://roadmap.sh" target="_blank"><img class="roadmap" src="https://api.roadmap.sh/v1-badge/wide/64d8fc13aa497d7fa5300898?variant=dark" alt="roadmap.sh" loading="lazy"></a></li>
+          <li class="education-item hover"><a href="https://roadmap.sh" target="_blank"><img class="roadmap" src="https://api.roadmap.sh/v1-badge/wide/64d8fc13aa497d7fa5300898?variant=dark" alt="roadmap.sh" loading="lazy" width="500" height="190"></a></li>
           <li class="education-item hover"><svg class="item-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.-->
               <path d="M310.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-192 192c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L242.7 256 73.4 86.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l192 192z"></path>
             </svg><a href="https://www.freecodecamp.org/certification/fccd8fe3e73-116f-49a1-8637-4ad334a1e91c/responsive-web-design" target="_blank">freeCodeCamp | Responsive Web Design</a></li>
           <li class="education-item">
             <picture class="item-certificate">
-              <source srcset="./images/certificate-laptop.png" media="(min-width: 1025px)" type="image/png" width="2448" height="1644">
+              <source srcset="./images/certificate-laptop.webp" media="(min-width: 1025px)" type="image/webp" width="998" height="670">
               <source srcset="./images/certificate-tablet-landscape.png" media="(min-width: 769px)" type="image/png" width="2047" height="1375">
-              <source srcset="./images/certificate-tablet.png" media="(min-width: 481px)" type="image/png" width="1536" height="1032"><img src="./images/certificate-mobile.png" alt="My certificate freeCodeCamp | Responsive Web Design" loading="lazy" width="960" height="645">
+              <source srcset="./images/certificate-tablet.png" media="(min-width: 481px)" type="image/png" width="1536" height="1032"><img src="./images/certificate-mobile.webp" alt="My certificate freeCodeCamp | Responsive Web Design" loading="lazy" width="768" height="516">
             </picture>
           </li>
         </ul>
@@ -104,8 +116,15 @@
       <h2>Projects</h2>
       <hr>
       <ul class="projects-list">
-        <li class="projects-item"><a class="projects-title" href="https://fsd-14.github.io/writings.dev/">Writings.dev</a><img class="projects-img-top" src="./images/writings-dev.svg" alt="Projects 'Writings.dev'">
-          <div class="projects-img-bottom"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" loading="lazy" alt="HTML5 icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" loading="lazy" alt="CSS3 icon"></div>
+        <li class="projects-item"><a class="projects-title" href="https://fsd-14.github.io/writings.dev/" target="_blank">Writings.dev</a><img class="projects-img-top" src="./images/writings-dev.webp" alt="Projects 'Writings.dev'" width="480" height="786" loading="lazy">
+          <div class="projects-img-bottom">
+            <svg viewBox="0 0 128 128" class="img-technologies">
+              <path fill="#E44D26" d="M19.569 27l8.087 89.919 36.289 9.682 36.39-9.499L108.431 27H19.569zM91.61 47.471l-.507 5.834L90.88 56H48.311l1.017 12h40.54l-.271 2.231-2.615 28.909-.192 1.69L64 106.964v-.005l-.027.012-22.777-5.916L39.65 84h11.168l.791 8.46 12.385 3.139.006-.234v.012l12.412-2.649L77.708 79H39.153l-2.734-30.836L36.152 45h55.724l-.266 2.471zM27.956 1.627h5.622v5.556h5.144V1.627h5.623v16.822h-5.623v-5.633h-5.143v5.633h-5.623V1.627zm23.782 5.579h-4.95V1.627h15.525v5.579h-4.952v11.243h-5.623V7.206zm13.039-5.579h5.862l3.607 5.911 3.603-5.911h5.865v16.822h-5.601v-8.338l-3.867 5.981h-.098l-3.87-5.981v8.338h-5.502V1.627zm21.736 0h5.624v11.262h7.907v5.561H86.513V1.627z"></path>
+            </svg>
+            <svg viewBox="0 0 128 128" class="img-technologies">
+              <path fill="#1572B6" d="M19.67 26l8.069 90.493 36.206 10.05 36.307-10.063L108.33 26H19.67zm69.21 50.488L86.53 98.38l.009 1.875L64 106.55v.001l-.018.015-22.719-6.225L39.726 83h11.141l.79 8.766 12.347 3.295-.004.015v-.032l12.394-3.495L77.702 77H51.795l-.222-2.355-.506-5.647L50.802 66h27.886l1.014-11H37.229l-.223-2.589-.506-6.03L36.235 43h55.597l-.267 3.334-2.685 30.154M89 14.374L81.851 6H89V1H73v4.363L81.39 13H73v5h16zm-19 0L63.193 6H70V1H55v4.363L62.733 13H55v5h15zM52 13h-8V6h8V1H38v17h14z"></path>
+            </svg>
+          </div>
         </li>
       </ul>
     </section>
@@ -113,10 +132,19 @@
       <h2>Contacts</h2>
       <hr>
       <ul>
-        <li class="contacts-item"><a href="mailto:fsd014@gmail.com"><img class="social-icon" src="./images/email.svg" alt="Email icon" loading="lazy" width="512" height="384">Email</a></li>
-        <li class="contacts-item"><a href="https://t.me/fsd014" target="_blank"><img class="social-icon" src="./images/telegram.svg" alt="Telegram icon" loading="lazy" width="496" height="496">Telegram</a></li>
-        <li class="contacts-item"><a href="https://github.com/FSD-14" target="_blank"><img class="social-icon" src="./images/github.svg" alt="GitHub icon" loading="lazy" width="496" height="484">GitHub</a></li>
-        <li class="contacts-item"><a href="https://vk.com/html_css_developer" target="_blank"><img class="social-icon" src="./images/vk.svg" alt="Vk icon" loading="lazy" width="448" height="448">VK</a></li>
+        <li class="contacts-item"><a href="mailto:fsd014@gmail.com"><svg viewBox="0 0 512 384" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="social-icon">
+              <!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m48,0c-26.5,0 -48,21.5 -48,48c0,15.1 7.1,29.3 19.2,38.4l217.6,163.2c11.4,8.5 27,8.5 38.4,0l217.6,-163.2c12.1,-9.1 19.2,-23.3 19.2,-38.4c0,-26.5 -21.5,-48 -48,-48l-416,0zm-48,112l0,208c0,35.3 28.7,64 64,64l384,0c35.3,0 64,-28.7 64,-64l0,-208l-217.6,163.2c-22.8,17.1 -54,17.1 -76.8,0l-217.6,-163.2z"></path>
+            </svg>Email</a></li>
+        <li class="contacts-item"><a href="https://t.me/fsd014" target="_blank"><svg viewBox="0 0 496 496" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="social-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m248,0c-136.97,0 -248,111.03 -248,248s111.03,248 248,248s248,-111.03 248,-248s-111.03,-248 -248,-248zm114.95,168.66c-3.73,39.22 -19.88,134.38 -28.1,178.3c-3.47,18.58 -10.32,24.82 -16.95,25.43c-14.4,1.32 -25.33,-9.52 -39.28,-18.67c-21.83,-14.3 -34.16,-23.21 -55.35,-37.17c-24.48,-16.14 -8.61,-25 5.34,-39.5c3.66,-3.8 67.11,-61.51 68.34,-66.75c0.15,-0.65 0.3,-3.1 -1.16,-4.38s-3.59,-0.85 -5.13,-0.5q-3.28,0.74 -104.61,69.14q-14.84,10.19 -26.89,9.93c-8.86,-0.19 -25.89,-5 -38.55,-9.12c-15.53,-5.05 -27.88,-7.72 -26.8,-16.29q0.84,-6.7 18.45,-13.7q108.44,-47.25 144.62,-62.3c68.88,-28.65 83.19,-33.62 92.51,-33.79c2.06,-0.03 6.64,0.47 9.61,2.89a10.45,10.45 0 0 1 3.53,6.71a43.77,43.77 0 0 1 0.42,9.77z"></path>
+            </svg>Telegram</a></li>
+        <li class="contacts-item"><a href="https://github.com/FSD-14" target="_blank"><svg viewBox="0 0 496 484" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="social-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m165.9,389.4c0,2 -2.3,3.6 -5.2,3.6c-3.3,0.3 -5.6,-1.3 -5.6,-3.6c0,-2 2.3,-3.6 5.2,-3.6c3,-0.3 5.6,1.3 5.6,3.6zm-31.1,-4.5c-0.7,2 1.3,4.3 4.3,4.9c2.6,1 5.6,0 6.2,-2s-1.3,-4.3 -4.3,-5.2c-2.6,-0.7 -5.5,0.3 -6.2,2.3zm44.2,-1.7c-2.9,0.7 -4.9,2.6 -4.6,4.9c0.3,2 2.9,3.3 5.9,2.6c2.9,-0.7 4.9,-2.6 4.6,-4.6c-0.3,-1.9 -3,-3.2 -5.9,-2.9zm65.8,-383.2c-138.7,0 -244.8,105.3 -244.8,244c0,110.9 69.8,205.8 169.5,239.2c12.8,2.3 17.3,-5.6 17.3,-12.1c0,-6.2 -0.3,-40.4 -0.3,-61.4c0,0 -70,15 -84.7,-29.8c0,0 -11.4,-29.1 -27.8,-36.6c0,0 -22.9,-15.7 1.6,-15.4c0,0 24.9,2 38.6,25.8c21.9,38.6 58.6,27.5 72.9,20.9c2.3,-16 8.8,-27.1 16,-33.7c-55.9,-6.2 -112.3,-14.3 -112.3,-110.5c0,-27.5 7.6,-41.3 23.6,-58.9c-2.6,-6.5 -11.1,-33.3 2.6,-67.9c20.9,-6.5 69,27 69,27c20,-5.6 41.5,-8.5 62.8,-8.5s42.8,2.9 62.8,8.5c0,0 48.1,-33.6 69,-27c13.7,34.7 5.2,61.4 2.6,67.9c16,17.7 25.8,31.5 25.8,58.9c0,96.5 -58.9,104.2 -114.8,110.5c9.2,7.9 17,22.9 17,46.4c0,33.7 -0.3,75.4 -0.3,83.6c0,6.5 4.6,14.4 17.3,12.1c100,-33.2 167.8,-128.1 167.8,-239c0,-138.7 -112.5,-244 -251.2,-244zm-147.6,344.9c-1.3,1 -1,3.3 0.7,5.2c1.6,1.6 3.9,2.3 5.2,1c1.3,-1 1,-3.3 -0.7,-5.2c-1.6,-1.6 -3.9,-2.3 -5.2,-1zm-10.8,-8.1c-0.7,1.3 0.3,2.9 2.3,3.9c1.6,1 3.6,0.7 4.3,-0.7c0.7,-1.3 -0.3,-2.9 -2.3,-3.9c-2,-0.6 -3.6,-0.3 -4.3,0.7zm32.4,35.6c-1.6,1.3 -1,4.3 1.3,6.2c2.3,2.3 5.2,2.6 6.5,1c1.3,-1.3 0.7,-4.3 -1.3,-6.2c-2.2,-2.3 -5.2,-2.6 -6.5,-1zm-11.4,-14.7c-1.6,1 -1.6,3.6 0,5.9c1.6,2.3 4.3,3.3 5.6,2.3c1.6,-1.3 1.6,-3.9 0,-6.2c-1.4,-2.3 -4,-3.3 -5.6,-2z"></path>
+            </svg>GitHub</a></li>
+        <li class="contacts-item"><a href="https://vk.com/html_css_developer" target="_blank"><svg viewBox="0 0 448 448" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" class="social-icon"><!--! Font Awesome Pro 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+              <path d="m31.49,31.49c-31.49,31.49 -31.49,82.18 -31.49,183.55l0,17.92c0,101.37 0,152.06 31.49,183.55c31.49,31.49 82.18,31.49 183.55,31.49l17.92,0c101.37,0 152.06,0 183.55,-31.49c31.49,-31.49 31.49,-82.18 31.49,-183.55l0,-17.92c0,-101.37 0,-152.06 -31.49,-183.55c-31.49,-31.49 -82.18,-31.49 -183.55,-31.49l-17.92,0c-101.37,0 -152.06,0 -183.55,31.49zm44.11,104.78l51.15,0c1.68,85.49 39.38,121.7 69.25,129.17l0,-129.17l48.16,0l0,73.73c29.49,-3.17 60.48,-36.77 70.93,-73.73l48.16,0c-3.94,19.17 -11.79,37.31 -23.06,53.31c-11.28,15.99 -25.73,29.49 -42.46,39.65c18.68,9.27 35.18,22.4 48.4,38.52c13.23,16.12 22.88,34.87 28.32,55l-53.01,0c-4.88,-17.49 -14.83,-33.14 -28.57,-45c-13.75,-11.85 -30.7,-19.38 -48.71,-21.64l0,66.64l-5.79,0c-102.1,0 -160.34,-70 -162.77,-186.48z"></path>
+            </svg>VK</a></li>
       </ul>
     </section>
   </div>
